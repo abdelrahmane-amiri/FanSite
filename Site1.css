@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
-    /*border:1px solid black;*/
+    /*border:1px solid red;*/
 }
 
 /*Variables*/
@@ -33,31 +33,13 @@ img{
 }
 
 a{
+    color: var(--Secondary-color);
     text-decoration: none;
 }
-
-.content{
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 1300px;
+li{
+    color: white;
 }
 
-.title{
-    text-align: center;
-    padding: 60px 0 100px;
-    text-transform: uppercase;
-    font-size:  var(--fsize-xl);
-}
-
-.title::after{
-    content: "";
-    width: 80px;
-    height: 5px;
-    display: block;
-    margin: 10px auto;
-    border-radius: 10px;
-    background: var(--Secondary-color);
-}
 
 #icon-menu{
     visibility: hidden;
@@ -110,7 +92,7 @@ header .navigation{
 
 /*First section*/
 
-.Present{
+.Hero{
     min-height: 100vh;
     background: linear-gradient(rgb(0, 0, 0,0.6), transparent), url(miaou.jpg);
     background-size: cover;
@@ -122,10 +104,72 @@ header .navigation{
     align-items: center;
 }
 
-.Present button{
-    color: white;
+.Hero button{
+    color: var(--Secondary-color);
     background-color: var(--First-color);
     padding: 2rem 6rem;
-    font-size: 1.8rem;
+    margin: 2rem;
+    font-size: var(--fsize-s);
     border-color: white;
+    border-radius: 10px;
+}
+
+.Hero button a {
+    text-shadow: 0 0 20px navy;
+}
+
+.Hero h2{
+    font-size: 3rem;
+    text-shadow: 0 0 10px black;
+}
+
+.Hero p{
+    font-size: 2rem;
+    text-shadow: 0 0 10px white;
+}
+
+/*-Presentation Section*/
+
+.Present{
+    background: var(--First-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Present .Photo{
+    width: 370px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.Present .Gif{
+    width: 700px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.Present .Frame{
+    display: flex;
+    gap:50px;
+}
+
+.Bio{
+    margin-top: 20px ;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Bio h2{
+    color: white;
+    font-size: var(--fsize-xl);
+}
+
+.Bio h3,p{
+    color: white;
 }
