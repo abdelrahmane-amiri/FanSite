@@ -101,7 +101,7 @@ header .navigation{
 
 .navigation .menu a:hover{
     color: var(--First-color);
-    background-color: #f3961c;
+    background-color: white;
 }
 
 .navigation .logo h2{
@@ -202,6 +202,60 @@ header .navigation{
     font-size: var(--fsize-m);
 } 
 
+/*Site section*/
+
+.choose{
+    background: black;
+    height: 1000px;
+}
+
+.choose .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.choose .simage{
+    width: 100%;
+}
+
+.choose .simage img{
+    width: 400px;
+    height: 500px;
+    margin-left: 12px;
+    transition: 0.3s ease;
+}
+
+.simage a {
+    display: inline-block;
+    position: relative;
+}
+
+.simage a img{
+    border-radius: 30px;
+}
+
+.simage a:hover img {
+    background-color: white;
+    opacity: 0.5;
+}
+
+.simage .texte {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    font-size: var(--fsize-m);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.simage a:hover .texte {
+    opacity: 1
+}
 
 @media screen and (min-width: 577px) and (max-width: 900px) {
     :root{
