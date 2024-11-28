@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    /*border:1px solid black;*/
+}
+
+/*Variables*/
+:root{
+
+    /*Colors*/
+    --First-color: black;
+    --Secondary-color: white;
+
+    /* Font size*/
+    --fsize-s: 0.9rem;
+    --fsize-n: 1rem;
+    --fsize-m: 1.1rem;
+    --fsize-l: 1.5rem;
+    --fsize-xl: 2rem;
+    --fsize-xxl: 2.3rem;
+
+    /* Font weight*/
+    --wsize-n: 400;
+    --wsize-m: 500;
+    --wsize-l: 600;
+    --wsize-xl: 700; 
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+.title{
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size:  var(--fsize-xl);
+}
+
+.title::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: var(--Secondary-color);
+}
+
+#icon-menu{
+    visibility: hidden;
+}
+
+/*Navigation style*/
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--First-color);
+}
+
+header .navigation{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+.navigation .menu{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.navigation .menu a{
+    color: white;
+    padding: 10px 18px;
+    font-size: var(--fsize-m);
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.navigation .menu a:hover{
+    color: var(--First-color);
+    background-color: white;
+}
+
+.navigation .logo h2{
+    color: white;
+}
+
+/*First section*/
+
+.Present{
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0,0.6), transparent), url(miaou.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Present button{
+    color: white;
+    background-color: var(--First-color);
+    padding: 2rem 6rem;
+    font-size: 1.8rem;
+    border-color: white;
+}
