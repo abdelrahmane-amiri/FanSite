@@ -94,7 +94,7 @@ header .navigation{
 
 .Hero{
     min-height: 100vh;
-    background: linear-gradient(rgb(0, 0, 0,0.6), transparent), url(miaou.jpg);
+    background: linear-gradient(rgb(0, 0, 0,0.6), transparent), url(Images/miaou.jpg);
     background-size: cover;
     background-position: center;
     color: white;
