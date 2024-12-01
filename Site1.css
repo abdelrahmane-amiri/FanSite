@@ -521,15 +521,473 @@ textarea {
 
 
 
-  @media screen and (max-width: 850px) {
+ @media screen and (min-width: 320px) and (max-width: 375px) {
     /* Navigation */
     #icon-menu {
         visibility: visible;
         cursor: pointer;
     }
 
+    .navigation {
+        padding: 10px;
+    }
+
+    #icon-menu:hover ~ .menu, .navigation:focus-within .menu {
+        display: flex;
+   }
+
     .navigation .menu {
-        display: none; 
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--First-color);
+        padding: 10px;
+    }
+
+    .navigation .menu a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 8px;
+    }
+
+    /* Hero Section */
+    .Hero {
+        min-height: 100vh;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .Hero h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .Hero p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .Hero button {
+        padding: 0.8rem 2rem;
+        font-size: 0.7rem;
+    }
+
+    /* Presentation Section */
+    .Present {
+        min-height: 150vh;
+        padding: 10px;
+    }
+
+    .Present .Frame {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .Present .Photo {
+        display: none;
+    }
+
+    .Present .Gif {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .Bio {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .Bio h2 {
+        font-size: var(--fsize-l);
+    }
+
+    /* Bio Section */
+    .bio-part {
+        padding: 10px;
+    }
+
+    .bio-part .content {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .photo-part img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .text-part {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-part h2 {
+        font-size: var(--fsize-l);
+        margin: 0 10px;
+    }
+
+    /* Event Section */
+    .event {
+        padding: 10px;
+        height: auto;
+    }
+
+    .content-e {
+        flex-direction: column;
+    }
+
+    .first, .seconde {
+        width: 100%;
+    }
+
+    .first h2 {
+        font-size: var(--fsize-l);
+    }
+
+    .first p {
+        margin-left: 0;
+        font-size: var(--fsize-m);
+    }
+
+    .list li {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* Realisation Section */
+    .realisation {
+        padding: 10px;
+    }
+
+    .title{
+        width: auto;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .content-rea {
+        margin-top: 50px;
+    }
+
+    .content-rea article {
+        max-width: 280px;
+    }
+
+    .content-rea article video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Actualité Section */
+    .actualite {
+        padding: 10px;
+    }
+
+    .title-a{
+        width: auto;
+    }
+
+    .title-a h1{
+        font-size: 3rem;
+    }
+
+    .content-a {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .content-a article {
+        max-width: 280px;
+        margin-bottom: 20px;
+    }
+
+    .content-a article img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Contact Section */
+    .Contact {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .Contact h1 {
+        font-size: 3rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    /* Navigation */
+    #icon-menu {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .navigation {
+        padding: 15px;
+    }
+
+    #icon-menu:hover ~ .menu, .navigation:focus-within .menu {
+        display: flex;
+    }
+
+    .navigation .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--First-color);
+        padding: 15px;
+    }
+
+    .navigation .menu a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    /* Hero Section */
+    .Hero {
+        min-height: 100vh;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .Hero h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .Hero p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .Hero button {
+        padding: 1rem 2.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* Presentation Section */
+    .Present {
+        min-height: 150vh;
+        padding: 15px;
+    }
+
+    .Present .Frame {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Present .Photo {
+        display: none;
+    }
+
+    .Present .Gif {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .Bio {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .Bio h2 {
+        font-size: var(--fsize-xl);
+    }
+
+    /* Bio Section */
+    .bio-part {
+        padding: 15px;
+    }
+
+    .bio-part .content {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .photo-part img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .text-part {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .text-part h2 {
+        font-size: var(--fsize-xl);
+        margin: 0 15px;
+    }
+
+    /* Event Section */
+    .event {
+        padding: 15px;
+        height: auto;
+    }
+
+    .content-e {
+        flex-direction: column;
+    }
+
+    .first, .seconde {
+        width: 100%;
+    }
+
+    .first h2 {
+        font-size: var(--fsize-xl);
+    }
+
+    .first p {
+        margin-left: 0;
+        font-size: var(--fsize-l);
+    }
+
+    .list li {
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* Realisation Section */
+    .realisation {
+        padding: 15px;
+    }
+
+    .title {
+        width: auto;
+    }
+
+    .title h1 {
+        font-size: 3.5rem;
+    }
+
+    .content-rea {
+        margin-top: 60px;
+    }
+
+    .content-rea article {
+        max-width: 320px;
+    }
+
+    .content-rea article video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Actualité Section */
+    .actualite {
+        padding: 15px;
+    }
+
+    .title-a {
+        width: auto;
+    }
+
+    .title-a h1 {
+        font-size: 3.5rem;
+    }
+
+    .content-a {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .content-a article {
+        max-width: 320px;
+        margin-bottom: 25px;
+    }
+
+    .content-a article img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Contact Section */
+    .Contact {
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 350px;
+        margin: 25px auto;
+    }
+
+    .Contact h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 15px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    /* Navigation */
+    #icon-menu {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .navigation {
+        padding: 20px;
+    }
+
+    #icon-menu:hover ~ .menu, .navigation:focus-within .menu {
+        display: flex;
+    }
+
+    .navigation .menu {
+        display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
@@ -542,140 +1000,137 @@ textarea {
     .navigation .menu a {
         width: 100%;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        padding: 12px;
     }
 
     /* Hero Section */
+    .Hero {
+        min-height: 100vh;
+        padding: 0 20px;
+        text-align: center;
+    }
+
     .Hero h2 {
         font-size: 2rem;
-        text-align: center;
+        margin-bottom: 20px;
     }
 
     .Hero p {
-        font-size: 1.5rem;
-        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 25px;
     }
 
     .Hero button {
-        padding: 1rem 3rem;
+        padding: 1.2rem 3rem;
+        font-size: 1rem;
     }
 
     /* Presentation Section */
-
-    .Bio{
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        justify-content: center;
-        text-align: center;
+    .Present {
+        min-height: 160vh;
+        padding: 20px;
     }
-
-    .Present{
-        min-height: 130vh;
-        justify-content: space-evenly;
-    }
-
 
     .Present .Frame {
-        flex-direction: column; 
-        align-items: center;
-        gap: 20px; 
+        flex-direction: column;
+        gap: 25px;
     }
 
-    .Present .Photo{
+    .Present .Photo {
         display: none;
     }
 
     .Present .Gif {
-        width: 100%; 
-        max-width: 370px; 
-        height: auto; 
+        width: 100%;
+        max-width: 400px;
+        height: auto;
     }
 
-    .Present {
-        padding: 20px; 
+    .Bio {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .Bio h2 {
+        font-size: var(--fsize-xl);
     }
 
     /* Bio Section */
     .bio-part {
-        min-height: 200vh;
+        padding: 20px;
     }
 
     .bio-part .content {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
         width: 100%;
-        height: 100%; 
-    }
-
-    .photo-part {
-        width: 90%;
-        max-width: 400px;
-        margin-bottom: 20px;
+        height: auto;
     }
 
     .photo-part img {
-        width: 100%; 
-        height: auto; 
+        width: 100%;
+        max-width: 400px;
+        height: auto;
     }
 
     .text-part {
-        width: 90%;
-        max-width: 600px;
-        text-align: center; 
-        margin-top: 20px; 
+        width: 100%;
+        padding: 20px;
     }
 
     .text-part h2 {
-        margin: 0 auto 20px;
+        font-size: var(--fsize-xl);
+        margin: 0 20px;
     }
 
     /* Event Section */
     .event {
-        min-height: 180vh;
+        padding: 20px;
+        height: auto;
     }
 
     .content-e {
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100%; 
     }
 
     .first, .seconde {
-        width: 90%;
-        max-width: 600px;
-    }
-
-    .first {
-        margin-bottom: 30px;
-        text-align: center; 
+        width: 100%;
     }
 
     .first h2 {
-        margin-bottom: 15px;
+        font-size: var(--fsize-xl);
     }
 
     .first p {
         margin-left: 0;
-        text-align: center; 
+        font-size: var(--fsize-l);
     }
 
     .list li {
         width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
+        padding: 10px;
     }
 
-    /* Realisations et Actualites */
-    .content-rea, .content-a {
-        flex-direction: column;
-        align-items: center;
+    /* Realisation Section */
+    .realisation {
+        padding: 20px;
     }
 
-    .content-rea article, .content-a article {
-        max-width: 100%;
-        width: 90%;
+    .title {
+        width: auto;
+    }
+
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    .content-rea {
+        margin-top: 60px;
+    }
+
+    .content-rea article {
+        max-width: 400px;
     }
 
     .content-rea article video {
@@ -683,23 +1138,288 @@ textarea {
         height: auto;
     }
 
-    .title h1, .title-a h1 {
-        font-size: 3rem;
+    /* Actualité Section */
+    .actualite {
+        padding: 20px;
     }
 
-    /* Contact */
+    .title-a {
+        width: auto;
+    }
+
+    .title-a h1 {
+        font-size: 4rem;
+    }
+
+    .content-a {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .content-a article {
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .content-a article img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Contact Section */
+    .Contact {
+        padding: 20px;
+    }
+
     form {
-        width: 90%;
-        margin: 50px auto;
+        width: 100%;
+        max-width: 400px;
+        margin: 30px auto;
+    }
+
+    .Contact h1 {
+        font-size: 4rem;
     }
 
     /* Footer */
+    .footer {
+        padding: 50px 20px;
+    }
+
     .row {
         flex-direction: column;
     }
 
     .column {
         width: 100%;
-        margin-bottom: 30px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Navigation */
+    .navigation {
+        padding: 25px;
+    }
+
+    .logo h2{
+        font-size: 1rem;
+    }
+
+    .navigation .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        position: static;
+        background: transparent;
+        padding: 0;
+    }
+
+    .navigation .menu a {
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    /* Hero Section */
+    .Hero {
+        min-height: 100vh;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .Hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .Hero p {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+    }
+
+    .Hero button {
+        padding: 1.5rem 3.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* Presentation Section */
+    .Present {
+        min-height: 100vh;
+        padding: 30px;
+    }
+
+    .Present .Frame {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .Present .Photo {
+        display: block;
+        width: 40%;
+    }
+
+    .Present .Gif {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+    }
+
+    .Bio {
+        margin-top: 50px;
+        flex-direction: row;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .Bio h2 {
+        font-size: var(--fsize-xl);
+    }
+
+    /* Bio Section */
+    .bio-part {
+        padding: 30px;
+    }
+
+    .bio-part .content {
+        flex-direction: row;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .photo-part img {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+    }
+
+    .text-part {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .text-part h2 {
+        font-size: var(--fsize-xl);
+        margin: 0;
+    }
+
+    /* Event Section */
+    .event {
+        padding: 30px;
+        height: auto;
+    }
+
+    .content-e {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .first, .seconde {
+        width: 48%;
+    }
+
+    .first h2 {
+        font-size: var(--fsize-xl);
+    }
+
+    .first p {
+        margin-left: 0;
+        font-size: var(--fsize-l);
+    }
+
+    .list li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Realisation Section */
+    .realisation {
+        padding: 30px;
+    }
+
+    .title {
+        width: auto;
+    }
+
+    .title h1 {
+        font-size: 4.5rem;
+    }
+
+    .content-rea {
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .content-rea article {
+        max-width: 480px;
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .content-rea article video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Actualité Section */
+    .actualite {
+        padding: 30px;
+    }
+
+    .title-a {
+        width: auto;
+    }
+
+    .title-a h1 {
+        font-size: 4.5rem;
+    }
+
+    .content-a {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .content-a article {
+        max-width: 480px;
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .content-a article img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Contact Section */
+    .Contact {
+        padding: 30px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 500px;
+        margin: 30px auto;
+    }
+
+    .Contact h1 {
+        font-size: 4.5rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 60px 30px;
+    }
+
+    .row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .column {
+        width: 48%;
+        padding: 20px;
     }
 }
