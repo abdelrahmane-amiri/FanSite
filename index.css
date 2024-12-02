@@ -1,154 +1,921 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>FanSite</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-</head>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    /*border:1px solid black;*/
+}
 
-<body>
-    <!--Navigation bar-->
-    <header>
-        <nav class="navigation">
-            <a href="#" class="logo">
-                <h2>Fansite</h2>
-            </a>
-            <a id="icon-menu" href="#">
-                <h2>Menu</h2>
-            </a>
-            <ul class="menu">
-                <li>
-                    <a href="#">Acceuil</a>
-                </li>
-                <li>
-                    <a href="Site1.html">Leon-Marchand</a>
-                </li>
-                <li>
-                    <a href="#">Will-smith</a>
-                </li>
-                <li>
-                    <a href="#">Site3</a>
-                </li>
-                <li>
-                    <a href="#Contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+/*Variables*/
+:root{
 
-    <main>
-        <!--First section-->
-        <section class="First">
-            <div class="content">
-                <div class="First-details">
-                    <h2 class="title">Le Fan Site</h2>
-                    <h3 class="subtitle">Visiter le site si vous voulez!</h3>
-                    <p class="descrition">Ici c'est la description du site Ici c'est la description du site</p>
-                    <div class="buttons">
-                        <a href="#section1" class="button">A propos</a>
-                        <a href="#" class="button">Contacte-nous</a>
-                    </div>
-                </div>
-                <div class="First-image">
-                    <img src="OIP.jpg" alt="image">
-                </div>
-            </div>
-        </section>
+    /*Colors*/
+    --First-color: black;
+    --Secondary-color: white;
 
-        <!--About Site-->
-        <section class="about" id="section1">
-            <div class="content">
-                <div class="about-image">
-                    <img src="OIP.jpg" alt="About Site">
-                </div>
-                <div class="about-details">
-                    <h2 class="title">A propos du FanSite</h2>
-                    <p class="text">Description du site web Description du site web Description du site web Description du site web</p>
-                    <div class="social">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    /* Font size*/
+    --fsize-s: 0.9rem;
+    --fsize-n: 1rem;
+    --fsize-m: 1.1rem;
+    --fsize-l: 1.5rem;
+    --fsize-xl: 2rem;
+    --fsize-xxl: 2.3rem;
 
-        <!--Choose Site-->
-        <section class="choose">
-            <div class="content">
-                <div class="simage">
-                    <a href="Site1.html">
-                        <img id="Uno" src="Images/Snapinsta.app_417744046_918200559818219_7960345336901713301_n_1080.jpg" alt="Site1">
-                        <div class="texte">
-                            <h2>Leon Marchand</h2>
-                            <p>Découvre le parcours du prodige francais</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <img id="Dos" src="Images/will.jpg" alt="Site2">
-                        <div class="texte">
-                            <h2>Will-Smith</h2>
-                            <p>La carrière d'un des plus grands acteurs</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <img id="Tres" src="OIP.jpg" alt="Site3">
-                        <div class="texte">
-                            <h2>Site 3</h2>
-                            <p>C'est le troisime site</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+    /* Font weight*/
+    --wsize-n: 400;
+    --wsize-m: 500;
+    --wsize-l: 600;
+    --wsize-xl: 700; 
+}
 
-        <section class="Contact" id="Contact">
-            <div>
-                <H1>Contacts</H1>
-            </div>
-            <form>      
-                <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-                <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-                <input type="submit" value="SUBMIT"/>
-              </form>
-        </section>
-    
-        <footer class="footer">
-            <div class="container-foot">
-             <div class="row">
-               <div class="column">
-                 <h4>FanSite</h4>
-                 <ul>
-                   <li><a href="Site1.html">Leon-Marchand</a></li>
-                   <li><a href="#">Will-Smith</a></li>
-                   <li><a href="#">????</a></li>
-                 </ul>
-               </div>
-               <div class="column">
-                 <h4>JeSaisPas</h4>
-                 <ul>
-                   <li><a href="#">Peter</a></li>
-                   <li><a href="#">Majid</a></li>
-                   <li><a href="#">Mopute</a></li>
-                 </ul>
-               </div>
-               <div class="column">
-                 <h4>Réseaux</h4>
-                 <div class="social-links">
-                   <a href="#"><i class="fab fa-facebook-f"></i></a>
-                   <a href="#"><i class="fab fa-twitter"></i></a>
-                   <a href="#"><i class="fab fa-instagram"></i></a>
-                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                 </div>
-               </div>
-             </div>
-            </div>
-         </footer>
-    </main>
-</body>
-</html>
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+.title{
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size:  var(--fsize-xl);
+}
+
+.title::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: var(--Secondary-color);
+}
+
+#icon-menu{
+    visibility: hidden;
+}
+
+/*Navigation style*/
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--First-color);
+}
+
+header .navigation{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+.navigation .menu{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.navigation .menu a{
+    color: white;
+    padding: 10px 18px;
+    font-size: var(--fsize-m);
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.navigation .menu a:hover{
+    color: var(--First-color);
+    background-color: white;
+}
+
+.navigation .logo h2{
+    color: white;
+}
+
+/*First Section*/
+.First{
+    min-height: 100vh;
+    background: var(--First-color);
+}
+
+.First .content{
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    color:white;
+}
+
+.First .First-details .title{
+    font-size: var(--fsize-xxl);
+    color: var(--Secondary-color);
+}
+
+.First .First-details .subtitle{
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--fsize-xl);
+    font-weight: var(--wsize-xl);
+}
+
+.First .First-details .description{
+    max-width: 70%;
+    margin: 24px 0 70px;
+    font-size: var(--fsize-m);
+}
+
+
+.First .First-details .buttons{
+    margin: 1rem;
+    display: flex;
+    gap: 23px;
+}
+
+.First .First-details .button{
+    padding: 10px 26px;
+    margin: 0 20px;
+    color: var(--First-color);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background: var(--Secondary-color);
+    font-weight: var(--wsize-m);
+    transition: 0.3s ease;
+}
+
+.First .First-details .button:hover{
+    background-color: var(--First-color);
+    color: white;
+    border: 2px solid white;
+}
+
+.First .First-image{
+    max-width: 500px;
+    margin-right: 150px;
+}
+
+/*About section*/
+
+.about{
+    padding: 120px 0;
+    background-color: #ffe4e1;
+}
+
+.about .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about .about-image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about .about-details .title{
+    padding: 0;
+}
+
+.about .about-details .text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--fsize-m);
+} 
+
+/*Site section*/
+
+.choose{
+    background: black;
+    height: 1000px;
+}
+
+.choose .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.choose .simage{
+    width: 100%;
+}
+
+.choose .simage img{
+    width: 400px;
+    height: 500px;
+    margin-left: 12px;
+    transition: 0.3s ease;
+}
+
+.simage a {
+    display: inline-block;
+    position: relative;
+}
+
+.simage a img{
+    border-radius: 30px;
+}
+
+.simage a:hover img {
+    background-color: white;
+    opacity: 0.5;
+}
+
+.simage .texte {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    font-size: var(--fsize-m);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.simage a:hover .texte {
+    opacity: 1
+}
+
+/*Contact*/
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:rgb(0, 0, 0);
+  font-family: "Poppins", serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+.Contact h1{
+    margin-top: 50px ;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins", serif;;
+    text-align: center;
+    font-size: 7rem;
+}
+
+.Contact{
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
+/*Footer*/
+.container-foot{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #000000;
+      padding: 70px 0;
+  }
+  .column{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .column h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .column h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #7a572c;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .column ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .column ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .column ul li a:hover{
+    color: #393434;
+    padding-left: 8px;
+  }
+  .column .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .column .social-links a:hover{
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 375px) {
+    /* Navigation */
+    #icon-menu {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    #icon-menu:hover ~ .menu, .navigation:focus-within .menu {
+        display: flex;
+    }
+
+    header .navigation {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navigation .menu {
+        display: none; /* Masquer le menu par défaut */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation .menu a {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    /* First Section */
+    .First .content {
+        margin: 0 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .First .First-details .title {
+        font-size: var(--fsize-xl);
+        margin-top: 50px;
+    }
+
+    .First .First-details .subtitle {
+        max-width: 100%;
+        font-size: var(--fsize-l);
+    }
+
+    .First .First-details .description {
+        max-width: 100%;
+        margin: 15px 0 30px;
+    }
+
+    .First .First-details .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .First .First-image {
+        display: none;
+    }
+
+    /* About Section */
+    .about .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about .about-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about .about-details .text {
+        margin: 20px 0;
+        line-height: 25px;
+    }
+
+    /* Choose Section */
+    .choose {
+        height: auto;
+    }
+
+    .choose .content {
+        flex-direction: column;
+    }
+
+    .choose .simage img {
+        width: 250px;
+        height: 350px;
+    }
+
+    /* Contact Section */
+    .Contact h1 {
+        font-size: 3rem;
+        margin-top: 30px;
+    }
+
+    form {
+        max-width: 290px;
+        margin: 20px auto;
+    }
+
+    .feedback-input {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    [type="submit"] {
+        font-size: 20px;
+    }
+
+    /* Footer */
+    .footer .row {
+        flex-direction: column;
+    }
+
+    .footer .column {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .column .social-links {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    /* Navigation */
+    #icon-menu {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    #icon-menu:hover ~ .menu, .navigation:focus-within .menu {
+        display: flex;
+    }
+
+    header .navigation {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navigation .menu {
+        display: none; /* Masquer le menu par défaut */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation .menu a {
+        display: block;
+        margin: 12px 0;
+        width: 100%;
+    }
+
+    /* First Section */
+    .First .content {
+        margin: 0 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .First .First-details .title {
+        font-size: calc(var(--fsize-xl) + 2px);
+        margin-top: 60px;
+    }
+
+    .First .First-details .subtitle {
+        max-width: 100%;
+        font-size: calc(var(--fsize-l) + 2px);
+    }
+
+    .First .First-details .description {
+        max-width: 100%;
+        margin: 20px 0 35px;
+    }
+
+    .First .First-details .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .First .First-image {
+        display: none;
+    }
+
+    /* About Section */
+    .about .content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about .about-image img {
+        width: 275px;
+        height: 275px;
+    }
+
+    .about .about-details .text {
+        margin: 25px 0;
+        line-height: 28px;
+    }
+
+    /* Choose Section */
+    .choose {
+        height: auto;
+    }
+
+    .choose .content {
+        flex-direction: column;
+    }
+
+    .choose .simage img {
+        width: 280px;
+        height: 380px;
+    }
+
+    /* Contact Section */
+    .Contact h1 {
+        font-size: 3.5rem;
+        margin-top: 40px;
+    }
+
+    form {
+        max-width: 320px;
+        margin: 25px auto;
+    }
+
+    .feedback-input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    [type="submit"] {
+        font-size: 22px;
+    }
+
+    /* Footer */
+    .footer .row {
+        flex-direction: column;
+    }
+
+    .footer .column {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .column .social-links {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    /* Navigation */
+    #icon-menu {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    #icon-menu:hover ~ .menu, .navigation:focus-within .menu {
+        display: flex;
+    }
+
+    header .navigation {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .navigation .menu {
+        display: none; /* Masquer le menu par défaut */
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navigation .menu a {
+        display: block;
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    /* First Section */
+    .First .content {
+        margin: 0 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .First .First-details .title {
+        font-size: calc(var(--fsize-xl) + 4px);
+        margin-top: 70px;
+    }
+
+    .First .First-details .subtitle {
+        max-width: 90%;
+        font-size: calc(var(--fsize-l) + 3px);
+    }
+
+    .First .First-details .description {
+        max-width: 90%;
+        margin: 25px 0 40px;
+    }
+
+    .First .First-details .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .First .First-image {
+        display: block;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    /* About Section */
+    .about .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about .about-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about .about-details .text {
+        margin: 30px 0;
+        line-height: 30px;
+    }
+
+    /* Choose Section */
+    .choose {
+        height: auto;
+    }
+
+    .choose .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .choose .simage img {
+        width: 320px;
+        height: 400px;
+    }
+
+    /* Contact Section */
+    .Contact h1 {
+        font-size: 4rem;
+        margin-top: 50px;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 30px auto;
+    }
+
+    .feedback-input {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    [type="submit"] {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+
+    /* Footer */
+    .footer .row {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer .column {
+        width: 45%;
+        text-align: left;
+    }
+
+    .column .social-links {
+        justify-content: flex-start;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    /* Navigation */
+    #icon-menu {
+        visibility: hidden; /* Masquer le menu hamburger */
+    }
+
+    header .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation .menu {
+        display: flex; /* Afficher le menu directement */
+        flex-direction: row;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .navigation .menu a {
+        display: inline-block;
+        margin: 0;
+    }
+
+    /* First Section */
+    .First .content {
+        margin: 0 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .First .First-details {
+        flex: 1;
+    }
+
+    .First .First-details .title {
+        font-size: calc(var(--fsize-xl) + 6px);
+        margin-top: 80px;
+    }
+
+    .First .First-details .subtitle {
+        max-width: 80%;
+        font-size: calc(var(--fsize-l) + 4px);
+    }
+
+    .First .First-details .description {
+        max-width: 80%;
+        margin: 30px 0 50px;
+    }
+
+    .First .First-details .buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .First .First-image {
+        flex: 1;
+        max-width: 400px;
+        margin: 0;
+        display: block;
+    }
+
+    /* About Section */
+    .about .content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .about .about-image img {
+        width: 350px;
+        height: auto;
+    }
+
+    .about .about-details .text {
+        margin: 0;
+        line-height: 32px;
+        max-width: 60%;
+    }
+
+    /* Choose Section */
+    .choose {
+        height: auto;
+    }
+
+    .choose .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .choose .simage img {
+        width: 350px;
+        height: auto;
+    }
+
+    /* Contact Section */
+    .Contact h1 {
+        font-size: 4.5rem;
+        margin-top: 60px;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 40px auto;
+    }
+
+    .feedback-input {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    [type="submit"] {
+        font-size: 24px;
+        padding: 12px 25px;
+    }
+
+    /* Footer */
+    .footer .row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer .column {
+        width: 30%;
+        text-align: left;
+    }
+
+    .column .social-links {
+        justify-content: flex-start;
+        display: flex;
+        gap: 15px;
+    }
+}
+
