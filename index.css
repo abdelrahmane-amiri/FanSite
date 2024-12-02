@@ -209,6 +209,7 @@ header .navigation{
     height: 1000px;
 }
 
+
 .choose .content{
     display: flex;
     align-items: center;
@@ -403,7 +404,7 @@ textarea {
     }
 
     .navigation .menu {
-        display: none; /* Masquer le menu par défaut */
+        display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
@@ -477,6 +478,25 @@ textarea {
         height: 350px;
     }
 
+    .choose .texte{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: var(--fsize-m);
+        opacity: 1; /* Always visible */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+    }
+
+    .simage a:hover img {
+        opacity: 0.7;
+    }
+
     /* Contact Section */
     .Contact h1 {
         font-size: 3rem;
@@ -532,7 +552,7 @@ textarea {
     }
 
     .navigation .menu {
-        display: none; /* Masquer le menu par défaut */
+        display: none; /* Masquer le menu*/
         flex-direction: column;
         width: 100%;
         text-align: center;
@@ -643,7 +663,7 @@ textarea {
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 769px) {
     /* Navigation */
     #icon-menu {
         visibility: visible;
@@ -662,7 +682,7 @@ textarea {
     }
 
     .navigation .menu {
-        display: none; /* Masquer le menu par défaut */
+        display: none;
         flex-direction: column;
         width: 100%;
         text-align: left;
@@ -739,6 +759,25 @@ textarea {
         height: 400px;
     }
 
+    .choose .texte{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: var(--fsize-m);
+        opacity: 1; /* Always visible */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+    }
+
+    .simage a:hover img {
+        opacity: 0.7;
+    }
+
     /* Contact Section */
     .Contact h1 {
         font-size: 4rem;
@@ -778,10 +817,10 @@ textarea {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+@media screen and (min-width: 769px) and (max-width: 1025px) {
     /* Navigation */
     #icon-menu {
-        visibility: hidden; /* Masquer le menu hamburger */
+        visibility: hidden; 
     }
 
     header .navigation {
@@ -791,7 +830,7 @@ textarea {
     }
 
     .navigation .menu {
-        display: flex; /* Afficher le menu directement */
+        display: flex;
         flex-direction: row;
         gap: 20px;
         text-align: left;
@@ -878,6 +917,26 @@ textarea {
         width: 350px;
         height: auto;
     }
+
+    .choose .texte{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: var(--fsize-m);
+        opacity: 1; /* Always visible */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+    }
+
+    .simage a:hover img {
+        opacity: 0.7;
+    }
+
 
     /* Contact Section */
     .Contact h1 {
