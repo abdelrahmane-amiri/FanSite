@@ -1,0 +1,49 @@
+#Image{
+    display: flex;
+    flex-direction: row;
+    max-width:1280px;
+    flex-wrap: wrap;
+}
+#Image img{
+    width: 28%;
+    height: 28%;
+    margin: 30px;
+    border: 3px black solid;
+    box-shadow: 6px 6px 0px grey;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(164 156 156 / 58%);
+}
+header{
+    position:static !important;
+}
+footer{
+    background-color: black;
+    display: flex;
+    align-content: center;
+
+}
+#Fan{
+    font-style:italic;
+    font-size: xx-small;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    margin-bottom: 0 !important;
+}
+.navigation .menu a{
+    padding: 0px 18px !important;
+}
+#Réseaux img{
+    max-width: 50px;
+    max-height: 50px;
+}
+#Réseaux{
+    display: flex;
+    flex-direction: row;
+}
