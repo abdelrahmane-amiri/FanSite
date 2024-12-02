@@ -971,7 +971,7 @@ textarea {
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
     /* Navigation */
     #icon-menu {
         visibility: visible;
@@ -1196,9 +1196,23 @@ textarea {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1024px) {
 
     /* Navigation */
+
+    #icon-menu {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .navigation {
+        padding: 20px;
+    }
+
+    #icon-menu:hover ~ .menu, .navigation:focus-within .menu {
+        display: flex;
+    }
+
     .navigation {
         padding: 25px;
     }
@@ -1208,8 +1222,8 @@ textarea {
     }
 
     .navigation .menu {
-        display: flex;
-        flex-direction: row;
+        display: none;
+        flex-direction: column;
         justify-content: space-around;
         width: 100%;
         position: static;
@@ -1227,6 +1241,7 @@ textarea {
         min-height: 100vh;
         padding: 0 30px;
         text-align: center;
+        min-width: 130vh ;
     }
 
     .Hero h2 {
@@ -1248,6 +1263,7 @@ textarea {
     .Present {
         min-height: 100vh;
         padding: 30px;
+        min-width: 130vh ;
     }
 
     .Present .Frame {
@@ -1256,7 +1272,7 @@ textarea {
     }
 
     .Present .Photo {
-        display: block;
+        display: none;
         width: 40%;
     }
 
@@ -1280,6 +1296,7 @@ textarea {
     /* Bio Section */
     .bio-part {
         padding: 30px;
+        min-width: 130vh ;
     }
 
     .bio-part .content {
@@ -1308,6 +1325,7 @@ textarea {
     .event {
         padding: 30px;
         height: auto;
+        min-width: 130vh ;
     }
 
     .content-e {
@@ -1336,6 +1354,7 @@ textarea {
     /* Realisation Section */
     .realisation {
         padding: 30px;
+        min-width: 130vh ;
     }
 
     .title {
@@ -1366,6 +1385,7 @@ textarea {
     /* Actualité Section */
     .actualite {
         padding: 30px;
+        min-width: 130vh ;
     }
 
     .title-a {
@@ -1396,6 +1416,7 @@ textarea {
     /* Contact Section */
     .Contact {
         padding: 30px;
+        min-width: 130vh ;
     }
 
     form {
