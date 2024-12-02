@@ -511,6 +511,414 @@ textarea {
     .column .social-links {
         justify-content: center;
         display: flex;
+<<<<<<< HEAD
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    /* Navigation */
+    #icon-menu {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    #icon-menu:hover ~ .menu, .navigation:focus-within .menu {
+        display: flex;
+    }
+
+    header .navigation {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navigation .menu {
+        display: none; /* Masquer le menu par défaut */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation .menu a {
+        display: block;
+        margin: 12px 0;
+        width: 100%;
+    }
+
+    /* First Section */
+    .First .content {
+        margin: 0 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .First .First-details .title {
+        font-size: calc(var(--fsize-xl) + 2px);
+        margin-top: 60px;
+    }
+
+    .First .First-details .subtitle {
+        max-width: 100%;
+        font-size: calc(var(--fsize-l) + 2px);
+    }
+
+    .First .First-details .description {
+        max-width: 100%;
+        margin: 20px 0 35px;
+    }
+
+    .First .First-details .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .First .First-image {
+        display: none;
+    }
+
+    /* About Section */
+    .about .content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about .about-image img {
+        width: 275px;
+        height: 275px;
+    }
+
+    .about .about-details .text {
+        margin: 25px 0;
+        line-height: 28px;
+    }
+
+    /* Choose Section */
+    .choose {
+        height: auto;
+    }
+
+    .choose .content {
+        flex-direction: column;
+    }
+
+    .choose .simage img {
+        width: 280px;
+        height: 380px;
+    }
+
+    /* Contact Section */
+    .Contact h1 {
+        font-size: 3.5rem;
+        margin-top: 40px;
+    }
+
+    form {
+        max-width: 320px;
+        margin: 25px auto;
+    }
+
+    .feedback-input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    [type="submit"] {
+        font-size: 22px;
+    }
+
+    /* Footer */
+    .footer .row {
+        flex-direction: column;
+    }
+
+    .footer .column {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .column .social-links {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    /* Navigation */
+    #icon-menu {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    #icon-menu:hover ~ .menu, .navigation:focus-within .menu {
+        display: flex;
+    }
+
+    header .navigation {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .navigation .menu {
+        display: none; /* Masquer le menu par défaut */
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navigation .menu a {
+        display: block;
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    /* First Section */
+    .First .content {
+        margin: 0 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .First .First-details .title {
+        font-size: calc(var(--fsize-xl) + 4px);
+        margin-top: 70px;
+    }
+
+    .First .First-details .subtitle {
+        max-width: 90%;
+        font-size: calc(var(--fsize-l) + 3px);
+    }
+
+    .First .First-details .description {
+        max-width: 90%;
+        margin: 25px 0 40px;
+    }
+
+    .First .First-details .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .First .First-image {
+        display: block;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    /* About Section */
+    .about .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about .about-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about .about-details .text {
+        margin: 30px 0;
+        line-height: 30px;
+    }
+
+    /* Choose Section */
+    .choose {
+        height: auto;
+    }
+
+    .choose .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .choose .simage img {
+        width: 320px;
+        height: 400px;
+    }
+
+    /* Contact Section */
+    .Contact h1 {
+        font-size: 4rem;
+        margin-top: 50px;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 30px auto;
+    }
+
+    .feedback-input {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    [type="submit"] {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+
+    /* Footer */
+    .footer .row {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer .column {
+        width: 45%;
+        text-align: left;
+    }
+
+    .column .social-links {
+        justify-content: flex-start;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    /* Navigation */
+    #icon-menu {
+        visibility: hidden; /* Masquer le menu hamburger */
+    }
+
+    header .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation .menu {
+        display: flex; /* Afficher le menu directement */
+        flex-direction: row;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .navigation .menu a {
+        display: inline-block;
+        margin: 0;
+    }
+
+    /* First Section */
+    .First .content {
+        margin: 0 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .First .First-details {
+        flex: 1;
+    }
+
+    .First .First-details .title {
+        font-size: calc(var(--fsize-xl) + 6px);
+        margin-top: 80px;
+    }
+
+    .First .First-details .subtitle {
+        max-width: 80%;
+        font-size: calc(var(--fsize-l) + 4px);
+    }
+
+    .First .First-details .description {
+        max-width: 80%;
+        margin: 30px 0 50px;
+    }
+
+    .First .First-details .buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .First .First-image {
+        flex: 1;
+        max-width: 400px;
+        margin: 0;
+        display: block;
+    }
+
+    /* About Section */
+    .about .content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .about .about-image img {
+        width: 350px;
+        height: auto;
+    }
+
+    .about .about-details .text {
+        margin: 0;
+        line-height: 32px;
+        max-width: 60%;
+    }
+
+    /* Choose Section */
+    .choose {
+        height: auto;
+    }
+
+    .choose .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .choose .simage img {
+        width: 350px;
+        height: auto;
+    }
+
+    /* Contact Section */
+    .Contact h1 {
+        font-size: 4.5rem;
+        margin-top: 60px;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 40px auto;
+    }
+
+    .feedback-input {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    [type="submit"] {
+        font-size: 24px;
+        padding: 12px 25px;
+    }
+
+    /* Footer */
+    .footer .row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer .column {
+        width: 30%;
+        text-align: left;
+    }
+
+    .column .social-links {
+        justify-content: flex-start;
+        display: flex;
+        gap: 15px;
+=======
+>>>>>>> 9a31f14effa8116a5f6651f82aea958226e0e4c9
     }
 }
 
@@ -918,3 +1326,4 @@ textarea {
         gap: 15px;
     }
 }
+
