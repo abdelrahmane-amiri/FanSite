@@ -69,3 +69,11 @@ nav{
 .navigation .menu a{
     padding: 0px 18px !important;
 }
+#Réseaux img{
+    max-width: 50px;
+    max-height: 50px;
+}
+#Réseaux{
+    display: flex;
+    flex-direction: row;
+}
