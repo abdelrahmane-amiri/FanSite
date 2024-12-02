@@ -1,294 +1,154 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", serif;
-    /*border:1px solid black;*/
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>FanSite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
 
-/*Variables*/
-:root{
+<body>
+    <!--Navigation bar-->
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">
+                <h2>Fansite</h2>
+            </a>
+            <a id="icon-menu" href="#">
+                <h2>Menu</h2>
+            </a>
+            <ul class="menu">
+                <li>
+                    <a href="#">Acceuil</a>
+                </li>
+                <li>
+                    <a href="Site1.html">Leon-Marchand</a>
+                </li>
+                <li>
+                    <a href="#">Will-smith</a>
+                </li>
+                <li>
+                    <a href="#">Site3</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    /*Colors*/
-    --First-color: black;
-    --Secondary-color: white;
+    <main>
+        <!--First section-->
+        <section class="First">
+            <div class="content">
+                <div class="First-details">
+                    <h2 class="title">Le Fan Site</h2>
+                    <h3 class="subtitle">Visiter le site si vous voulez!</h3>
+                    <p class="descrition">Ici c'est la description du site Ici c'est la description du site</p>
+                    <div class="buttons">
+                        <a href="#section1" class="button">A propos</a>
+                        <a href="#" class="button">Contacte-nous</a>
+                    </div>
+                </div>
+                <div class="First-image">
+                    <img src="OIP.jpg" alt="image">
+                </div>
+            </div>
+        </section>
 
-    /* Font size*/
-    --fsize-s: 0.9rem;
-    --fsize-n: 1rem;
-    --fsize-m: 1.1rem;
-    --fsize-l: 1.5rem;
-    --fsize-xl: 2rem;
-    --fsize-xxl: 2.3rem;
+        <!--About Site-->
+        <section class="about" id="section1">
+            <div class="content">
+                <div class="about-image">
+                    <img src="OIP.jpg" alt="About Site">
+                </div>
+                <div class="about-details">
+                    <h2 class="title">A propos du FanSite</h2>
+                    <p class="text">Description du site web Description du site web Description du site web Description du site web</p>
+                    <div class="social">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    /* Font weight*/
-    --wsize-n: 400;
-    --wsize-m: 500;
-    --wsize-l: 600;
-    --wsize-xl: 700; 
-}
+        <!--Choose Site-->
+        <section class="choose">
+            <div class="content">
+                <div class="simage">
+                    <a href="Site1.html">
+                        <img id="Uno" src="Images/Snapinsta.app_417744046_918200559818219_7960345336901713301_n_1080.jpg" alt="Site1">
+                        <div class="texte">
+                            <h2>Leon Marchand</h2>
+                            <p>Découvre le parcours du prodige francais</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img id="Dos" src="Images/will.jpg" alt="Site2">
+                        <div class="texte">
+                            <h2>Will-Smith</h2>
+                            <p>La carrière d'un des plus grands acteurs</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img id="Tres" src="OIP.jpg" alt="Site3">
+                        <div class="texte">
+                            <h2>Site 3</h2>
+                            <p>C'est le troisime site</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-img{
-    width: 100%;
-}
-
-a{
-    text-decoration: none;
-}
-
-.content{
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 1300px;
-}
-
-.title{
-    text-align: center;
-    padding: 60px 0 100px;
-    text-transform: uppercase;
-    font-size:  var(--fsize-xl);
-}
-
-.title::after{
-    content: "";
-    width: 80px;
-    height: 5px;
-    display: block;
-    margin: 10px auto;
-    border-radius: 10px;
-    background: var(--Secondary-color);
-}
-
-#icon-menu{
-    visibility: hidden;
-}
-
-/*Navigation style*/
-
-header{
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-    background: var(--First-color);
-}
-
-header .navigation{
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navigation{
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 1300px;
-}
-
-.navigation .menu{
-    display: flex;
-    gap: 10px;
-    list-style: none;
-}
-
-.navigation .menu a{
-    color: white;
-    padding: 10px 18px;
-    font-size: var(--fsize-m);
-    border-radius: 30px;
-    transition: 0.3s ease;
-}
-
-.navigation .menu a:hover{
-    color: var(--First-color);
-    background-color: white;
-}
-
-.navigation .logo h2{
-    color: white;
-}
-
-/*First Section*/
-.First{
-    min-height: 100vh;
-    background: var(--First-color);
-}
-
-.First .content{
-    margin: 0 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
-    color:white;
-}
-
-.First .First-details .title{
-    font-size: var(--fsize-xxl);
-    color: var(--Secondary-color);
-}
-
-.First .First-details .subtitle{
-    margin-top: 8px;
-    max-width: 70%;
-    font-size: var(--fsize-xl);
-    font-weight: var(--wsize-xl);
-}
-
-.First .First-details .description{
-    max-width: 70%;
-    margin: 24px 0 70px;
-    font-size: var(--fsize-m);
-}
-
-
-.First .First-details .buttons{
-    margin: 1rem;
-    display: flex;
-    gap: 23px;
-}
-
-.First .First-details .button{
-    padding: 10px 26px;
-    margin: 0 20px;
-    color: var(--First-color);
-    border: 2px solid transparent;
-    border-radius: 30px;
-    background: var(--Secondary-color);
-    font-weight: var(--wsize-m);
-    transition: 0.3s ease;
-}
-
-.First .First-details .button:hover{
-    background-color: var(--First-color);
-    color: white;
-    border: 2px solid white;
-}
-
-.First .First-image{
-    max-width: 500px;
-    margin-right: 150px;
-}
-
-/*About section*/
-
-.about{
-    padding: 120px 0;
-    background-color: #ffe4e1;
-}
-
-.about .content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.about .about-image img{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.about .about-details .title{
-    padding: 0;
-}
-
-.about .about-details .text{
-    line-height: 30px;
-    margin: 50px 0 30px;
-    text-align: center;
-    font-size: var(--fsize-m);
-} 
-
-/*Site section*/
-
-.choose{
-    background: black;
-    height: 1000px;
-}
-
-.choose .content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.choose .simage{
-    width: 100%;
-}
-
-.choose .simage img{
-    width: 400px;
-    height: 500px;
-    margin-left: 12px;
-    transition: 0.3s ease;
-}
-
-.simage a {
-    display: inline-block;
-    position: relative;
-}
-
-.simage a img{
-    border-radius: 30px;
-}
-
-.simage a:hover img {
-    background-color: white;
-    opacity: 0.5;
-}
-
-.simage .texte {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: white;
-    font-size: var(--fsize-m);
-    opacity: 0;
-    transition: 0.3s ease;
-}
-
-.simage a:hover .texte {
-    opacity: 1
-}
-
-@media screen and (min-width: 577px) and (max-width: 900px) {
-    :root{
-    /* Font size*/
-    --fsize-m: 1rem;
-    --fsize-l: 1.3rem;
-    --fsize-xl: 1.5rem;
-    --fsize-xxl: 1.8rem; 
-}
-
-    .navigation .menu{
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 300px;
-        height: 100%;
-        background: white;
-        visibility: hidden;
-    }
-
-    .navigation .menu a{
-        color: black;
-        display: block;
-        margin-top: 17px;
-        font-size: var(--fsize-l);
-    }
-
-    #icon-menu{
-        visibility: visible;
-    }
-
-    #icon-menu:hover ~ .menu{
-              visibility: visible;
-    }
-}
+        <section class="Contact" id="Contact">
+            <div>
+                <H1>Contacts</H1>
+            </div>
+            <form>      
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <input type="submit" value="SUBMIT"/>
+              </form>
+        </section>
+    
+        <footer class="footer">
+            <div class="container-foot">
+             <div class="row">
+               <div class="column">
+                 <h4>FanSite</h4>
+                 <ul>
+                   <li><a href="Site1.html">Leon-Marchand</a></li>
+                   <li><a href="#">Will-Smith</a></li>
+                   <li><a href="#">????</a></li>
+                 </ul>
+               </div>
+               <div class="column">
+                 <h4>JeSaisPas</h4>
+                 <ul>
+                   <li><a href="#">Peter</a></li>
+                   <li><a href="#">Majid</a></li>
+                   <li><a href="#">Mopute</a></li>
+                 </ul>
+               </div>
+               <div class="column">
+                 <h4>Réseaux</h4>
+                 <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+               </div>
+             </div>
+            </div>
+         </footer>
+    </main>
+</body>
+</html>
