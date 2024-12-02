@@ -1,0 +1,44 @@
+header{
+    position:static !important;
+}
+main{
+    background-color:rgb(164 156 156 / 58%);
+    height: 600px;
+}
+h1{
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+}
+#formulaire{
+    display: flex;
+    justify-content: center;
+    border: 3px black solid;
+    background-color:rgba(196, 189, 189, 0.981);
+}
+footer{
+    background-color: black;
+    display: flex;
+    align-content: center;
+}
+#Fan{
+    font-style:italic;
+    font-size: xx-small;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    margin-bottom: 0 !important;
+}
+.navigation .menu a{
+    padding: 0px 18px !important;
+}
+#Réseaux img{
+    max-width: 50px;
+    max-height: 50px;
+}
+#Réseaux{
+    display: flex;
+    flex-direction: row;
+}
